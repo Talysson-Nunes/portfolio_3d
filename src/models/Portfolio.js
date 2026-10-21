@@ -23,13 +23,6 @@ const Portfolio = sequelize.define('Portfolio', {
   timestamps: true,
   createdAt: 'created_at',
   updatedAt: 'updated_at',
-  
-  indexes: [
-    {
-      unique: true,
-      fields: ['title', 'student_id']
-    }
-  ]
 });
 
 module.exports = Portfolio;
